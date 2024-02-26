@@ -3,7 +3,6 @@ import ImgSource from "../Data/WhatOffer.png";
 import {
   Box,
   Center,
-  Grid,
   Heading,
   SimpleGrid,
   Stack,

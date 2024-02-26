@@ -1,7 +1,6 @@
 import {
   Box,
   Flex,
-  Heading,
   Text,
   Stack,
   Container,
@@ -56,30 +55,6 @@ const TestimonialContent = (props: Props) => {
   );
 };
 
-const TestimonialHeading = (props: Props) => {
-  const { children } = props;
-
-  return (
-    <Heading as={"h3"} fontSize={"xl"}>
-      {children}
-    </Heading>
-  );
-};
-
-const TestimonialText = (props: Props) => {
-  const { children } = props;
-
-  return (
-    <Text
-      textAlign={"center"}
-      color={useColorModeValue("gray.600", "gray.400")}
-      fontSize={"32px"}
-      fontWeight={600}
-    >
-      {children}
-    </Text>
-  );
-};
 
 const TestimonialAvatar = ({ src, name, title }) => {
   return (
@@ -120,8 +95,6 @@ export default function Testimonials() {
         >
           <Testimonial>
             <TestimonialContent>
-              {/* <TestimonialHeading>Efficient Collaborating</TestimonialHeading> */}
-              {/* <Text fontSize={28} fontWeight={600}>Efficient Collaborating</Text> */}
               <Flex>
                 <GradeIcon style={{ color: "rgb(37,99,235)" }} />
                 <GradeIcon style={{ color: "rgb(37,99,235)" }} />
@@ -145,8 +118,6 @@ export default function Testimonials() {
 
           <Testimonial>
             <TestimonialContent>
-              {/* <TestimonialHeading>Efficient Collaborating</TestimonialHeading> */}
-              {/* <Text fontSize={28} fontWeight={600}>Efficient Collaborating</Text> */}
               <Flex>
                 <GradeIcon style={{ color: "rgb(37,99,235)" }} />
                 <GradeIcon style={{ color: "rgb(37,99,235)" }} />
@@ -170,8 +141,6 @@ export default function Testimonials() {
 
           <Testimonial>
             <TestimonialContent>
-              {/* <TestimonialHeading>Efficient Collaborating</TestimonialHeading> */}
-              {/* <Text fontSize={28} fontWeight={600}>Efficient Collaborating</Text> */}
               <Flex>
                 <GradeIcon style={{ color: "rgb(37,99,235)" }} />
                 <GradeIcon style={{ color: "rgb(37,99,235)" }} />
