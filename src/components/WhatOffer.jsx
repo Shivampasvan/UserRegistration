@@ -9,6 +9,11 @@ import {
   Text,
 } from "@chakra-ui/react";
 import SchoolIcon from "@mui/icons-material/School";
+import VideocamIcon from '@mui/icons-material/Videocam';
+import PsychologyIcon from '@mui/icons-material/Psychology';
+import LiveTvIcon from '@mui/icons-material/LiveTv';
+import Board from '../Data/board.png';
+
 
 const WhatOffer = () => {
   return (
@@ -42,9 +47,10 @@ const WhatOffer = () => {
               opacity: 1,
               color: "white",
               transition: ".5s",
+              boxShadow: 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px'
             }}
           >
-            <SchoolIcon style={{ fontSize: 50, alignItems: "center" }} />
+            <LiveTvIcon style={{ fontSize: 50, alignItems: "center" }} />
             <Heading fontFamily={"roboto"} fontSize={28}>
               Live Masterclass
             </Heading>
@@ -68,6 +74,7 @@ const WhatOffer = () => {
               opacity: 1,
               color: "white",
               transition: ".5s",
+              boxShadow: 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px'
             }}
           >
             <SchoolIcon style={{ fontSize: 50, alignItems: "center" }} />
@@ -94,9 +101,10 @@ const WhatOffer = () => {
               opacity: 1,
               color: "white",
               transition: ".5s",
+              boxShadow: 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px'
             }}
           >
-            <SchoolIcon style={{ fontSize: 50, alignItems: "center" }} />
+            <VideocamIcon style={{ fontSize: 50, alignItems: "center" }} />
             <Heading fontFamily={"roboto"} fontSize={28}>
               Recorded Course
             </Heading>
@@ -120,9 +128,10 @@ const WhatOffer = () => {
               opacity: 1,
               color: "white",
               transition: ".5s",
+              boxShadow: 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px'
             }}
           >
-            <SchoolIcon style={{ fontSize: 50, alignItems: "center" }} />
+            <PsychologyIcon style={{ fontSize: 50, alignItems: "center" }} />
             <Heading fontFamily={"roboto"} fontSize={28}>
               Practical Learning
             </Heading>
@@ -145,6 +154,7 @@ const WhatOffer = () => {
               opacity: 1,
               color: "white",
               transition: ".5s",
+              boxShadow: 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px'
             }}
           >
             <SchoolIcon style={{ fontSize: 50, alignItems: "center" }} />
@@ -170,6 +180,7 @@ const WhatOffer = () => {
               opacity: 1,
               color: "white",
               transition: ".5s",
+              boxShadow: 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px'
             }}
           >
             <SchoolIcon style={{ fontSize: 50, alignItems: "center" }} />
