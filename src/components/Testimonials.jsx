@@ -61,12 +61,12 @@ const TestimonialAvatar = ({ src, name, title }) => {
     <Flex align={"center"} mt={8} direction={"column"}>
       <Avatar src={src} mb={2} />
       <Stack spacing={-1} align={"center"}>
-        <Text fontWeight={600} fontSize={"16px"} color={"rgb(13,44,66)"}>
+        <Text fontWeight={600} fontSize={"17px"} color={"rgb(13,44,66)"}>
           {name}
         </Text>
         <Text
           fontFamily={"roboto"}
-          fontWeight={500}
+          fontWeight={440}
           fontSize={"13px"}
           color={useColorModeValue("gray.500", "gray.500")}
         >
