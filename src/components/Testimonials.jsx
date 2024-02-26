@@ -11,6 +11,7 @@ import GradeIcon from "@mui/icons-material/Grade";
 import User4 from "../Data/user4.png";
 import User5 from "../Data/user5.png";
 import User2 from "../Data/user2.png";
+import StarHalfIcon from '@mui/icons-material/StarHalf';
 
 interface Props {
   children: React.ReactNode;
@@ -123,7 +124,7 @@ export default function Testimonials() {
                 <GradeIcon style={{ color: "rgb(37,99,235)" }} />
                 <GradeIcon style={{ color: "rgb(37,99,235)" }} />
                 <GradeIcon style={{ color: "rgb(37,99,235)" }} />
-                <GradeIcon style={{ color: "rgb(37,99,235)" }} />
+                <StarHalfIcon style={{ color: "rgb(37,99,235)" }} />
               </Flex>
               <Text>
                 Comprehensive learning, practical approach, and outstanding
