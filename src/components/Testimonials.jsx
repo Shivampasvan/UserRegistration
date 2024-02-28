@@ -62,12 +62,13 @@ const TestimonialAvatar = ({ src, name, title }) => {
     <Flex align={"center"} mt={8} direction={"column"}>
       <Avatar src={src} mb={2} />
       <Stack spacing={-1} align={"center"}>
-        <Text fontWeight={600} fontSize={"17px"} color={"rgb(13,44,66)"}>
+        <Text fontWeight={600} fontSize={"17px"} color={"rgb(13,44,66)"} transform={'scale(1.025, 1)'}>
           {name}
         </Text>
         <Text
+          transform={'scale(1.05, 1)'}
           fontFamily={"roboto"}
-          fontWeight={440}
+          fontWeight={400}
           fontSize={"13px"}
           color={useColorModeValue("gray.500", "gray.500")}
         >
@@ -110,7 +111,7 @@ export default function Testimonials() {
               </Text>
             </TestimonialContent>
             <TestimonialAvatar
-              style={{ fontWeight: 600 }}
+              
               src={User5}
               name={"Shreya Arora"}
               title={"1st Batch"}
@@ -133,7 +134,7 @@ export default function Testimonials() {
               </Text>
             </TestimonialContent>
             <TestimonialAvatar
-              style={{ fontWeight: 600 }}
+              
               src={User2}
               name={"Rahul Malik"}
               title={"2nd Batch"}
@@ -156,7 +157,6 @@ export default function Testimonials() {
               </Text>
             </TestimonialContent>
             <TestimonialAvatar
-              style={{ fontWeight: 600 }}
               src={User4}
               name={"Drishti Sahni"}
               title={"3rd Batch"}

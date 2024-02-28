@@ -12,7 +12,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import VideocamIcon from '@mui/icons-material/Videocam';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
-import Board from '../Data/board.png';
+
 
 
 const WhatOffer = () => {
@@ -20,11 +20,11 @@ const WhatOffer = () => {
     <>
       <Box bgImage={ImgSource} maxH={"100%"} paddingTop={20}>
         <Center>
-          <Heading style={{ fontFamily: "roboto" }}>What we offer</Heading>
+          <Heading style={{ fontFamily: "roboto", color:'rgb(5,8,69)' }}>What we offer</Heading>
         </Center>
         <Center>
           <Text fontSize={20} color={"gray.600"}>
-            One complete solution for all your financial problems
+            " One complete solution for all your financial problems "
           </Text>
         </Center>
         <SimpleGrid
@@ -40,14 +40,17 @@ const WhatOffer = () => {
             height={250}
             gap={"20px"}
             alignItems={"center"}
+            color={'rgb(5,8,69)'}
             _hover={{
+              cursor: 'pointer',
               borderRadius: "20px",
               // border: '2px solid red',
               bgColor: "rgb(5,8,69)",
               opacity: 1,
               color: "white",
               transition: ".5s",
-              boxShadow: 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px'
+              boxShadow: 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px',
+              
             }}
           >
             <LiveTvIcon style={{ fontSize: 50, alignItems: "center" }} />
@@ -67,7 +70,9 @@ const WhatOffer = () => {
             height={250}
             gap={"20px"}
             alignItems={"center"}
+            color={'rgb(5,8,69)'}
             _hover={{
+              cursor: 'pointer',
               borderRadius: "20px",
               // border: '2px solid red',
               bgColor: "rgb(5,8,69)",
@@ -94,7 +99,9 @@ const WhatOffer = () => {
             height={250}
             gap={"20px"}
             alignItems={"center"}
+            color={'rgb(5,8,69)'}
             _hover={{
+              cursor: 'pointer',
               borderRadius: "20px",
               // border: '2px solid red',
               bgColor: "rgb(5,8,69)",
@@ -121,7 +128,9 @@ const WhatOffer = () => {
             height={250}
             gap={"20px"}
             alignItems={"center"}
+            color={'rgb(5,8,69)'}
             _hover={{
+              cursor: 'pointer',
               borderRadius: "20px",
               // border: '2px solid red',
               bgColor: "rgb(5,8,69)",
@@ -147,7 +156,9 @@ const WhatOffer = () => {
             height={250}
             gap={"20px"}
             alignItems={"center"}
+            color={'rgb(5,8,69)'}
             _hover={{
+              cursor: 'pointer',
               borderRadius: "20px",
               // border: '2px solid red',
               bgColor: "rgb(5,8,69)",
@@ -173,7 +184,9 @@ const WhatOffer = () => {
             height={250}
             gap={"20px"}
             alignItems={"center"}
+            color={'rgb(5,8,69)'}
             _hover={{
+              cursor: 'pointer',
               borderRadius: "20px",
               // border: '2px solid red',
               bgColor: "rgb(5,8,69)",

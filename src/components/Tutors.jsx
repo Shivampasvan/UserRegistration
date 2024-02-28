@@ -13,7 +13,7 @@ import Udit from '../Data/udit.png'
 
 export default function Tutors() {
   return (
-    <Box fontFamily={"Roboto, sans-serif"} bgColor={"rgb(5,8,69)"}>
+    <Box fontFamily={"Roboto, sans-serif"} bgColor={"rgb(5,8,69)"} >
       <Box>
             <Center  fontSize={48} color={'whitesmoke'} paddingTop={'12'}>Our Tutors</Center>
       </Box>
