@@ -82,18 +82,18 @@ const TestimonialAvatar = ({ src, name, title }) => {
 export default function Testimonials() {
   return (
     <Box>
-      <Container maxW={"6xl"} py={24} as={Stack} spacing={20}>
+      <Container maxW={'6xl'} py={24} as={Stack} spacing={20}>
         <Stack spacing={0} align={"center"}>
           <Text color={"#2563EB"} fontWeight={600}>
             2000+ Happy Traders
           </Text>
-          <Text fontSize={36} fontWeight={600}>
+          <Text fontSize={36} fontWeight={600} paddingX={{base:12}} textAlign={'center'}>
             Don’t just take our words
           </Text>
         </Stack>
         <Stack
           direction={{ base: "column", sm: "column", md: "row", lg: "row" }}
-          spacing={{ base: 16, md: 16, lg: 16 }}
+          spacing={{ base: 8, md: 12, lg: 16 }}
         >
           <Testimonial>
             <TestimonialContent>

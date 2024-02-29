@@ -5,6 +5,8 @@
     border-radius: 10px;
     padding: 68px;
     width: 600px;
+    /* width: 'auto'; */
+    /* position: relative; */
     position: absolute;
     top: 0;
     margin-left: 800px;

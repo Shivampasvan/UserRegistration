@@ -18,7 +18,7 @@ export default function Faq() {
         <Center paddingBottom={24}>
         <Heading fontFamily={'roboto'}>FAQs</Heading>
         </Center>
-        <Accordion defaultIndex={[0]} allowMultiple paddingX={44}>
+        <Accordion defaultIndex={[0]} allowMultiple paddingX={{base:12, sm:16, md:20, lg:36}}>
             <AccordionItem>
                 <Heading>
                 <AccordionButton paddingY={6}>

@@ -23,12 +23,12 @@ const WhatOffer = () => {
           <Heading style={{ fontFamily: "roboto", color:'rgb(5,8,69)' }}>What we offer</Heading>
         </Center>
         <Center>
-          <Text fontSize={20} color={"gray.600"}>
+          <Text fontSize={20} color={"gray.600"} paddingX={20} textAlign={'center'}>
             " One complete solution for all your financial problems "
           </Text>
         </Center>
         <SimpleGrid
-          columns={3}
+          columns={{base:1, sm:1, md:2, lg:3}}
           spacing={2}
           padding={8}
           paddingTop={10}

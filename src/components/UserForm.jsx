@@ -23,8 +23,7 @@ const UserForm = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-  let uri =
-    "mongodb+srv://stocktutor:mahadev@atlascluster.woz44kn.mongodb.net/shivamkadb?retryWrites=true&w=majority";
+  let uri = "https://plum-gharial-yoke.cyclic.app/users/add";
 
   const handleClick = () => {
     
