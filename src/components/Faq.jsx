@@ -14,15 +14,15 @@ export default function Faq() {
   return (
 
     <>
-        <Box marginY={20}>
+        <Box marginY={20} fontFamily={'roboto'}>
         <Center paddingBottom={24}>
-        <Heading fontFamily={'roboto'}>FAQs</Heading>
+        <Heading color={'RGB(17,16,119)'}>FAQs</Heading>
         </Center>
         <Accordion defaultIndex={[0]} allowMultiple paddingX={{base:12, sm:16, md:20, lg:36}}>
             <AccordionItem>
                 <Heading>
                 <AccordionButton paddingY={6}>
-                    <Box as="span" fontFamily={'roboto'} fontSize={17} color={'gray.640'} fontWeight={500} flex='1'  textAlign='left'>
+                    <Box as="span" fontSize={18} color={'RGB(17,16,119)'} fontWeight={500} flex='1' textAlign='left'>
                     1. Can beginners take the course ?
                     </Box>
                     <AccordionIcon/>
@@ -36,7 +36,7 @@ export default function Faq() {
             <AccordionItem>
                 <Heading>
                 <AccordionButton paddingY={6}>
-                    <Box as="span" fontFamily={'roboto'} fontSize={17} color={'gray.640'} fontWeight={500} flex='1' textAlign='left'>
+                    <Box as="span" fontSize={18} color={'RGB(17,16,119)'} fontWeight={500} flex='1' textAlign='left'>
                     2. What is the duration of the course ?
                     </Box>
                     <AccordionIcon />
@@ -50,7 +50,7 @@ export default function Faq() {
             <AccordionItem>
                 <Heading>
                 <AccordionButton paddingY={6}>
-                    <Box as="span" fontFamily={'roboto'} fontSize={17} color={'gray.640'} fontWeight={500} flex='1' textAlign='left'>
+                    <Box as="span" fontSize={18} color={'RGB(17,16,119)'} fontWeight={500} flex='1' textAlign='left'>
                     3. Will you help with placement after the course ?
                     </Box>
                     <AccordionIcon />
@@ -64,7 +64,7 @@ export default function Faq() {
             <AccordionItem>
                 <Heading>
                 <AccordionButton paddingY={6}>
-                    <Box as="span" fontFamily={'roboto'} fontSize={17} color={'gray.640'} fontWeight={500} flex='1' textAlign='left'>
+                    <Box as="span" fontSize={18} color={'RGB(17,16,119)'} fontWeight={500} flex='1' textAlign='left'>
                     4. Will we get a chance to do virtual trading during the course ?
                     </Box>
                     <AccordionIcon />
@@ -78,7 +78,7 @@ export default function Faq() {
             <AccordionItem>
                 <Heading>
                 <AccordionButton paddingY={6}>
-                    <Box as="span" fontFamily={'roboto'} fontSize={17} color={'gray.640'} fontWeight={500} flex='1' textAlign='left'>
+                    <Box as="span" fontSize={18} color={'RGB(17,16,119)'} fontWeight={500} flex='1' textAlign='left'>
                     5. Is there a support feature for students ?
                     </Box>
                     <AccordionIcon />
@@ -92,7 +92,7 @@ export default function Faq() {
             <AccordionItem>
                 <Heading>
                 <AccordionButton paddingY={6}>
-                    <Box as="span" fontFamily={'roboto'} fontSize={17} color={'gray.640'} fontWeight={500} flex='1' textAlign='left'>
+                    <Box as="span" fontSize={18} color={'RGB(17,16,119)'} fontWeight={500} flex='1' textAlign='left'>
                     6. Do I need prior financial knowledge to enroll ?
                     </Box>
                     <AccordionIcon />

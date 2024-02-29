@@ -4,13 +4,14 @@
     gap: 35px;
     border-radius: 10px;
     padding: 68px;
-    width: 600px;
+    width: 40%;
+    height: auto;
     /* width: 'auto'; */
     /* position: relative; */
     position: absolute;
     top: 0;
-    margin-left: 800px;
-    margin-top: 40px;
+    margin-left: 50%;
+    /* margin-top: 40px; */
 }
 
 .formbox-flex{

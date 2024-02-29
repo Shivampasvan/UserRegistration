@@ -16,21 +16,27 @@ import Manmeet from "../Data/manmeet.png";
 
 export default function Tutors() {
   return (
-    <Box fontFamily={'roboto'} bgColor={"rgb(5,8,69)"}>
+    <>
+    <Box padding={40} border={'2px solid red'} display={{base:'block', sm:'none', md:'none', lg:'none'}}>
+      <Center>
+        <Text>Using this box for mobile screen.</Text>
+      </Center>
+    </Box>
+
+    <Box fontFamily={'roboto'} bgColor={"rgb(5,8,69)"} py={10} display={{base:'none', sm:'block', md:'block', lg:'block'}}>
       <Box>
-        <Center fontSize={48} color={"whitesmoke"} paddingTop={"12"}>
+        <Center fontSize={48} color={"whitesmoke"} paddingTop={"8"}>
           Our Tutors
         </Center>
       </Box>
 
-      <Stack
-        //Stack
+      <SimpleGrid
         alignSelf={"center"}
         // py={20}
         padding={20}
         gap={"48px"}
-        direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
-        // spacing={{ base: 8, md: 12, lg: 16 }}
+        // direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
+        columns={{base:1, sm:2, md:2, lg:4}}
       >
         <Box
           role={"group"}
@@ -279,7 +285,8 @@ export default function Tutors() {
             </Text>
           </Stack>
         </Box>
-      </Stack>
+      </SimpleGrid>
     </Box>
+    </>
   );
 }

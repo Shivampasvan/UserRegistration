@@ -82,12 +82,12 @@ const TestimonialAvatar = ({ src, name, title }) => {
 export default function Testimonials() {
   return (
     <Box>
-      <Container maxW={'6xl'} py={24} as={Stack} spacing={20}>
+      <Container maxW={'6xl'} py={32} as={Stack} spacing={20}>
         <Stack spacing={0} align={"center"}>
           <Text color={"#2563EB"} fontWeight={600}>
             2000+ Happy Traders
           </Text>
-          <Text fontSize={36} fontWeight={600} paddingX={{base:12}} textAlign={'center'}>
+          <Text fontSize={36} fontWeight={600} paddingX={{base:12}} textAlign={'center'} >
             Don’t just take our words
           </Text>
         </Stack>
