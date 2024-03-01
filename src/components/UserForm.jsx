@@ -90,7 +90,7 @@ const UserForm = () => {
           </video>
         </Box>
 
-        <Box className="formbox">
+        <Box className="formbox shrink">
           <Flex className="formbox-flex">
             <FormControl id="fname" isRequired>
               <FormLabel>First name</FormLabel>
