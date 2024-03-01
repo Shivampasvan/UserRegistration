@@ -7,16 +7,19 @@ import {
   Stack,
   Image,
   SimpleGrid,
-  Grid,
 } from "@chakra-ui/react";
 import Sachin from "../Data/sachin.png";
 import Ayushi from "../Data/ayushi.png";
 import Udit from "../Data/udit.png";
 import Manmeet from "../Data/manmeet.png";
+import AnimatedCursor from "react-animated-cursor"
+import "./Tutors.css";
+
 
 export default function Tutors() {
   return (
     <>
+    <AnimatedCursor />
     <Box padding={40} border={'2px solid red'} display={{base:'block', sm:'none', md:'none', lg:'none'}}>
       <Center>
         <Text>Using this box for mobile screen.</Text>
