@@ -80,14 +80,14 @@ const UserForm = () => {
 
   return (
     <>
-      <Box>
+      <Box className="MainBox">
         <Box>
           <video autoPlay loop muted>
             <source src={formvideo} type="video/mp4" />
           </video>
         </Box>
 
-        <Box className="formbox">
+        <Box className="formbox shrink">
           <Flex className="formbox-flex">
             <FormControl id="fname" isRequired>
               <FormLabel>First name</FormLabel>
