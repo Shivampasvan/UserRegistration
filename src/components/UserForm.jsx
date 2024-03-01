@@ -12,7 +12,8 @@ import {
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import "./UserForm.css";
-import formvideo from "../Data/LiveMasterClass.mp4";
+// import formvideo from "../Data/LiveMasterClass.mp4";
+import formvideo1 from "../Data/LiveMasterClass1.mp4";
 import { PhoneIcon } from "@chakra-ui/icons";
 import axios from "axios";
 
@@ -82,12 +83,14 @@ const UserForm = () => {
     <>
       <Box className="MainBox">
         <Box>
-          <video autoPlay loop muted>
-            <source src={formvideo} type="video/mp4" />
+          <video autoPlay loop muted style={{
+            position:'relative'
+          }}>
+            <source src={formvideo1} type="video/mp4" />
           </video>
         </Box>
 
-        <Box className="formbox shrink">
+        <Box className="formbox">
           <Flex className="formbox-flex">
             <FormControl id="fname" isRequired>
               <FormLabel>First name</FormLabel>
