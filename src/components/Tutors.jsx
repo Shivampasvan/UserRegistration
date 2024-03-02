@@ -13,12 +13,13 @@ import Ayushi from "../Data/ayushi.png";
 import Udit from "../Data/udit.png";
 import Manmeet from "../Data/manmeet.png";
 import AnimatedCursor from "react-animated-cursor"
-import "./Tutors.css";
+// import "./Tutors.css";
 
 
 export default function Tutors() {
   return (
     <>
+    
     <AnimatedCursor />
     <Box padding={40} border={'2px solid red'} display={{base:'block', sm:'none', md:'none', lg:'none'}}>
       <Center>
@@ -290,6 +291,7 @@ export default function Tutors() {
         </Box>
       </SimpleGrid>
     </Box>
+    
     </>
   );
 }

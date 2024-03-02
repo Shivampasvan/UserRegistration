@@ -59,7 +59,7 @@ const TestimonialContent = (props: Props) => {
 
 const TestimonialAvatar = ({ src, name, title }) => {
   return (
-    <Flex align={"center"} mt={8} direction={"column"}>
+    <Flex align={"center"} mt={8} direction={"column"} >
       <Avatar src={src} mb={2} />
       <Stack spacing={-1} align={"center"}>
         <Text fontWeight={600} fontSize={"17px"} color={"rgb(13,44,66)"} transform={'scale(1.025, 1)'}>
@@ -81,7 +81,7 @@ const TestimonialAvatar = ({ src, name, title }) => {
 
 export default function Testimonials() {
   return (
-    <Box>
+    <Box bgGradient='linear(to-l, white, #5689ea)'>
       <Container maxW={'6xl'} py={32} as={Stack} spacing={20}>
         <Stack spacing={0} align={"center"}>
           <Text color={"#2563EB"} fontWeight={600}>
