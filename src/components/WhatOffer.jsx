@@ -12,15 +12,16 @@ import SchoolIcon from "@mui/icons-material/School";
 import VideocamIcon from '@mui/icons-material/Videocam';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
-
+// import styled from "styled-components";
+// import { keyframes } from "styled-components";
 
 
 const WhatOffer = () => {
   return (
     <>
-      <Box bgImage={ImgSource} maxH={"100%"} paddingTop={20}>
+      <Box bgImage={ImgSource} maxH={"100%"} paddingY={20}>
         <Center>
-          <Heading style={{ fontFamily: "roboto", color:'rgb(5,8,69)' }}>What we offer</Heading>
+          <Heading style={{ fontFamily: "roboto", color:'#0a2472' }}>What we offer</Heading>
         </Center>
         <Center>
           <Text fontSize={20} color={"gray.600"} paddingX={20} textAlign={'center'}>
@@ -34,6 +35,8 @@ const WhatOffer = () => {
           paddingTop={10}
           justifyItems={"center"}
         >
+          
+          <a href="https://stocktutor.com/Masterclass">
           <Stack
             padding={5}
             width={300}
@@ -44,7 +47,6 @@ const WhatOffer = () => {
             _hover={{
               cursor: 'pointer',
               borderRadius: "20px",
-              // border: '2px solid red',
               bgColor: "rgb(5,8,69)",
               opacity: 1,
               color: "white",
@@ -53,6 +55,7 @@ const WhatOffer = () => {
               
             }}
           >
+
             <LiveTvIcon style={{ fontSize: 50, alignItems: "center" }} />
             <Heading fontFamily={"roboto"} fontSize={28}>
               Live Masterclass
@@ -63,7 +66,8 @@ const WhatOffer = () => {
               guidance
             </Text>
           </Stack>
-
+          </a>
+          <a href="https://stocktutor.com/virtual-trading">
           <Stack
             padding={5}
             width={300}
@@ -92,7 +96,8 @@ const WhatOffer = () => {
               risk-free virtual environment
             </Text>
           </Stack>
-
+          </a>
+          <a href="https://stocktutor.com/AllCourses">
           <Stack
             padding={5}
             width={300}
@@ -121,7 +126,8 @@ const WhatOffer = () => {
               convenient on-demand sessions
             </Text>
           </Stack>
-
+          </a>
+          <a href="https://stocktutor.com/virtual-trading">
           <Stack
             padding={5}
             width={300}
@@ -149,7 +155,8 @@ const WhatOffer = () => {
               Gain hands-on trading experience and real-world skills for success in the stock market
             </Text>
           </Stack>
-
+          </a>
+          <a href="https://stocktutor.com/Blog">
           <Stack
             padding={5}
             width={300}
@@ -177,7 +184,8 @@ const WhatOffer = () => {
               Master the art of trading with proven tactics and expert insights tailored for success in the stock market
             </Text>
           </Stack>
-
+          </a>
+          <a href="https://stocktutor.com/Masterclass">
           <Stack
             padding={5}
             width={300}
@@ -205,10 +213,37 @@ const WhatOffer = () => {
               Unlock your potential in the financial world with tailored guidance and industry insights
             </Text>
           </Stack>
+          </a>
         </SimpleGrid>
       </Box>
     </>
   );
 };
+
+// const hue = keyframes`
+//  from {
+//    -webkit-filter: hue-rotate(160deg);
+//  }
+//  to {
+//    -webkit-filter: hue-rotate(300deg);
+//  }
+// `;
+// const AnimatedGradientText = styled.h1`
+//   color: #f35626;
+//   background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   -webkit-animation: ${hue} 10s infinite linear;
+//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+//     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+//   font-feature-settings: "kern";
+//   font-size: 40px;
+//   font-weight: 700;
+//   line-height: 48px;
+//   overflow-wrap: break-word;
+//   text-align: center;
+//   text-rendering: optimizelegibility;
+//   -moz-osx-font-smoothing: grayscale;
+// `;
 
 export default WhatOffer;

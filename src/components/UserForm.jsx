@@ -9,13 +9,21 @@ import {
   Textarea,
   Button,
   useToast,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import "./UserForm.css";
+import "./SocialMedia.css";
 // import formvideo from "../Data/LiveMasterClass.mp4";
 import formvideo1 from "../Data/LiveMasterClass1.mp4";
+import LeftAlign from "../Data/LeftAlign.mp4";
 import { PhoneIcon } from "@chakra-ui/icons";
 import axios from "axios";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import XIcon from "@mui/icons-material/X";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const UserForm = () => {
   const toast = useToast();
@@ -27,7 +35,6 @@ const UserForm = () => {
   let uri = "https://plum-gharial-yoke.cyclic.app/users/add";
 
   const handleClick = () => {
-    
     if (
       fname !== "" &&
       lname !== "" &&
@@ -43,7 +50,8 @@ const UserForm = () => {
         message,
       };
 
-      axios.post(uri, userData)
+      axios
+        .post(uri, userData)
         .then((res) => {
           toast({
             title: "Data submitted successfully",
@@ -81,12 +89,60 @@ const UserForm = () => {
 
   return (
     <>
-      <Box className="MainBox">
-        <Box>
-          <video autoPlay loop muted style={{
-            position:'relative'
-          }}>
-            <source src={formvideo1} type="video/mp4" />
+      <Box>
+        <Box className="icon-bar">
+          <a
+            href="https://www.facebook.com/people/Stock-Tutor/61552036775314/?mibextid=ZbWKwL"
+            class="facebook"
+          >
+            <FacebookIcon></FacebookIcon>
+          </a>
+          <a href="https://twitter.com/_Stocktutor" class="twitter">
+            <XIcon></XIcon>
+          </a>
+          <a
+            href="https://www.instagram.com/stocktutorofficial/"
+            class="google"
+          >
+            <InstagramIcon></InstagramIcon>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/stock-tutor/"
+            class="linkedin"
+          >
+            <LinkedInIcon></LinkedInIcon>
+          </a>
+          <a
+            href="https://www.youtube.com/@Stock_Tutor_Official"
+            class="youtube"
+          >
+            <YouTubeIcon></YouTubeIcon>
+          </a>
+        </Box>
+
+        <Box display={{ base: "none", sm: "block", md: "block", lg: "block" }}>
+          <video
+            autoPlay
+            loop
+            muted
+            style={{
+              position: "relative",
+            }}
+          >
+            <source src={LeftAlign} type="video/mp4" />
+          </video>
+        </Box>
+
+        <Box display={{ base: "block", sm: "none", md: "none", lg: "none" }}>
+          <video
+            autoPlay
+            loop
+            muted
+            style={{
+              position: "relative",
+            }}
+          >
+            <source src={LeftAlign} type="video/mp4" />
           </video>
         </Box>
 
@@ -150,19 +206,24 @@ const UserForm = () => {
           </FormControl>
 
           <Button
+            boxShadow={"0px 0px 15px currentcolor"}
             onClick={handleClick}
-            bgColor={"rgb(5,8,69)"}
+            // bgColor={"rgb(5,8,69)"}
+            bgGradient="linear(to-r, #171A54, white)"
             color={"white"}
             _hover={{
               color: "rgb(5,8,69)",
               bgColor: "rgb(210,224,251)",
               fontsize: 40,
+              // boxShadow:('0px 0px 15px currentcolor')
             }}
           >
             Enquiry Now
           </Button>
         </Box>
       </Box>
+
+      <SimpleGrid column={{ base: 1, sm: 1, md: 2, lg: 2 }}></SimpleGrid>
     </>
   );
 };

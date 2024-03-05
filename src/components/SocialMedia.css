@@ -1,0 +1,75 @@
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 8px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+
+  
+
+
+  .gradient_anim_btn {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    /* margin: 12px; */
+    padding: 14px 20px 14px 20px;
+    /* border-radius: 0.7em; */
+    background: -webkit-linear-gradient(225deg, rgb(251, 175, 21), rgb(251, 21, 242),             
+    rgb(21, 198, 251)) 0% 0% / 300% 300%;
+    background-size: 200% auto;
+    -webkit-animation: gradient_move 3s ease infinite;
+    animation: gradient_move 3s ease infinite;
+  }
+
+  @-webkit-keyframes gradient_move {
+    0%{background-position: 0% 92%}
+    50%{background-position: 100% 9%}
+    100%{background-position: 0% 92%}
+  }
+  
+  @keyframes gradient_move {
+    0%{background-position: 0% 92%}
+    50%{background-position: 100% 9%}
+    100%{background-position: 0% 92%}
+  }
