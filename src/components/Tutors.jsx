@@ -59,6 +59,7 @@ export default function Tutors() {
           
           
           <Box 
+          
           margin={'auto'} 
           width={'850px'} 
           // fontFamily="roboto" 
@@ -66,6 +67,7 @@ export default function Tutors() {
           textAlign={'center'}
           bgGradient='linear(to-r, #4361ee, #3a0ca3, #4361ee)'
           bgClip='text'
+          
           >
             Our tutors epitomize excellence, blending expertise with
             personalized support. They ignite curiosity, nurture growth, and

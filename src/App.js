@@ -10,13 +10,11 @@ function App() {
   return (
     <>
     <ChakraProvider>
-      
         <UserForm/>
         <Tutors/>
         <WhatOffer/>
         <Testimonials/>
         <Faq/>
-      
     </ChakraProvider>
     </>
   );
