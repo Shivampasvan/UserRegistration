@@ -10,7 +10,7 @@ function App() {
   return (
     <>
     <ChakraProvider>
-        <UserForm/>
+        {/* <UserForm/> */}
         <Tutors/>
         <WhatOffer/>
         <Testimonials/>

@@ -49,8 +49,8 @@
 
 
   .gradient_anim_btn {
-    background: -webkit-linear-gradient(225deg, rgb(136, 163, 248), rgb(246, 247, 253),             
-    #8aa3ff) 0% 0% / 300% 300%;
+    background: -webkit-linear-gradient(225deg, #6392ec, rgb(246, 247, 253),             
+    #6392ec) 0% 0% / 300% 300%;
     background-size: 200% auto;
     -webkit-animation: gradient_move 3s ease infinite;
     animation: gradient_move 3s ease infinite;

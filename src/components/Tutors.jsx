@@ -41,15 +41,18 @@ export default function Tutors() {
       >
         <Stack gap={"0px"}>
           <Center
+          width={'50%'}
+          textAlign={'center'}
             fontSize={40}
             fontWeight={500}
             color={"#080E83"}
             paddingTop={"12"}
             lineHeight={"60px"}
             transform={"scaleY(0.94)"}
+            margin={'auto'}
           >
-            <span style={{ fontFamily: "monospace" }}> “ </span>Explore Our Team
-            of Expert Tutors<span style={{ fontFamily: "monospace" }}> ” </span>
+            Explore Our Team
+            of Expert Tutors
           </Center>
           {/* <Center>
             <Text color={"#080E83"} fontFamily="roboto" fontSize={20}>
@@ -61,19 +64,20 @@ export default function Tutors() {
           <Box 
           
           margin={'auto'} 
-          width={'850px'} 
-          // fontFamily="roboto" 
-          // fontSize={'18px'} 
+          width={'57%'} 
+          
           textAlign={'center'}
           bgGradient='linear(to-r, #4361ee, #3a0ca3, #4361ee)'
           bgClip='text'
           
           >
+          <span style={{ fontFamily: "monospace", fontSize: "20px" }}> “ </span>
             Our tutors epitomize excellence, blending expertise with
             personalized support. They ignite curiosity, nurture growth, and
             ensure success for every student. With genuine passion and
             dedication, they create engaging learning environments where
             students thrive and excel academically.
+            <span style={{ fontFamily: "monospace", fontSize: "20px" }}> ” </span>
             </Box>
           
           
@@ -349,7 +353,7 @@ export default function Tutors() {
                 Finance
               </Heading>
               <Text>
-                15 years of experience and made thousand of people financially
+                13 years of experience and made thousand of people financially
                 literate
               </Text>
             </Stack>
