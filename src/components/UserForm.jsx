@@ -17,8 +17,8 @@ import React, { useState } from "react";
 import "./UserForm.css";
 import "./SocialMedia.css";
 // import formvideo from "../Data/LiveMasterClass.mp4";
-import formvideo1 from "../Data/LiveMasterClass1.mp4";
-import LeftAlign from "../Data/LeftAlign.mp4";
+import formvideo1 from "../Data/LiveMasterClass11.mp4";
+// import LeftAlign from "../Data/LeftAlign.mp4";
 import { PhoneIcon } from "@chakra-ui/icons";
 import axios from "axios";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -122,7 +122,7 @@ const UserForm = () => {
           </a>
         </Box>
 
-        {/* <Box display={{ base: "none", sm: "block", md: "block", lg: "block" }}>
+        <Box display={{ base: "none", sm: "block", md: "block", lg: "block" }}>
           <video
             autoPlay
             loop
@@ -131,7 +131,7 @@ const UserForm = () => {
               position: "relative",
             }}
           >
-            <source src={LeftAlign} type="video/mp4" />
+            <source src={formvideo1} type="video/mp4" />
           </video>
         </Box>
 
@@ -144,7 +144,7 @@ const UserForm = () => {
               position: "relative",
             }}
           >
-            <source src={LeftAlign} type="video/mp4" />
+            <source src={formvideo1} type="video/mp4" />
           </video>
         </Box>
 
@@ -206,12 +206,13 @@ const UserForm = () => {
               onChange={(e) => setMessage(e.target.value)}
             />
           </FormControl>
-
+          <Box width={'55%'} margin={'auto'}>
           <Button
+          width={'100%'}
             boxShadow={"0px 0px 15px currentcolor"}
             onClick={handleClick}
             // bgColor={"rgb(5,8,69)"}
-            bgGradient="linear(to-r, #171A54, white)"
+            bgGradient="linear(to-r, #5689ea, white)"
             color={"white"}
             _hover={{
               color: "rgb(5,8,69)",
@@ -222,10 +223,11 @@ const UserForm = () => {
           >
             Enquiry Now
           </Button>
-        </Box> */}
+          </Box>
+        </Box>
       </Box>
 
-      <SimpleGrid
+      {/* <SimpleGrid
         height={600}
         bgGradient="linear( #10002b, #6c757d, #10002b)"
         fontFamily={"roboto"}
@@ -264,8 +266,9 @@ const UserForm = () => {
 
         <Box margin={"auto"}>
           <Button>Click Here !</Button>
+          
         </Box>
-      </SimpleGrid>
+      </SimpleGrid> */}
     </>
   );
 };
