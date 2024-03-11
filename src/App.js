@@ -8,6 +8,7 @@ import WhatOffer from './components/WhatOffer';
 import Testing from './components/Testing';
 import Slider from './components/Slider';
 import Footer from './components/Footer';
+import Certificate from './components/Certificate';
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
         <WhatOffer/>
         <Testimonials/>
         <Slider/>
+        <Certificate/>
         <Faq/>
-        {/* <Footer/> */}
+        <Footer/>
         {/* <Testing/> */}
         
     </ChakraProvider>

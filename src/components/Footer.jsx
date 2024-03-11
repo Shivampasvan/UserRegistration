@@ -7,11 +7,15 @@ import {
   VisuallyHidden,
   chakra,
   useColorModeValue,
-} from '@chakra-ui/react'
-// import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa'
-
-// import { AppStoreBadge } from '#/components/AppStoreBadge'
-// import { PlayStoreBadge } from '#/components/PlayStoreBadge'
+  Image,
+  Link,
+} from '@chakra-ui/react';
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
+import AppStoreBadge from '../Data/AppStoreBadge.png';
+import PlayStoreBadge from '../Data/PlayStoreBadge.png';
+import biglogo from '../Data/biglogo.png';
 
 const ListHeader = ({ children }) => {
   return (
@@ -52,7 +56,9 @@ export default function Footer() {
   return (
     <Box
       bg={useColorModeValue('gray.50', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}>
+      // color={useColorModeValue('gray.700', 'gray.200')}
+      color={'RGB(34 75 159)'}
+      >
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={'flex-start'}>
@@ -100,11 +106,15 @@ export default function Footer() {
             </Box>
           </Stack>
 
-          {/* <Stack align={'flex-start'}>
+          <Stack align={'flex-start'}>
             <ListHeader>Install App</ListHeader>
-            <AppStoreBadge />
-            <PlayStoreBadge />
-          </Stack> */}
+            {/* <AppStoreBadge />
+            <PlayStoreBadge /> */}
+            <Stack gap={0}>
+            <Link isExternal><Image height={'70%'} src={AppStoreBadge}/></Link>
+            <Link isExternal><Image height={'70%'} src={PlayStoreBadge}/></Link>
+            </Stack>
+          </Stack>
         </SimpleGrid>
       </Container>
 
@@ -115,25 +125,65 @@ export default function Footer() {
         <Container
           as={Stack}
           maxW={'6xl'}
-          py={4}
+          // py={4}
           direction={{ base: 'column', md: 'row' }}
           spacing={4}
           justify={{ md: 'space-between' }}
           align={{ md: 'center' }}>
-          <Text>© 2023 Stock Tutor. All rights reserved</Text>
+
+          <Box width={20}>
+          <Image src={biglogo} width={'100%'} alt="Logo" />
+          </Box>
+          <Text>StockTutor 2023 : All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
-              {/* <FaTwitter /> */}
+            
+            <SocialButton label={'Twitter'} >
+            <Link href={'https://twitter.com/_Stocktutor'} isExternal><FaXTwitter /></Link>
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
-              {/* <FaYoutube /> */}
+            
+            <SocialButton label={'YouTube'}>
+              <Link href={'https://www.youtube.com/@Stock_Tutor_Official'} isExternal><FaYoutube /></Link>
             </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
-              {/* <FaInstagram /> */}
+
+            <SocialButton label={'Instagram'} >
+              <Link href={'https://www.instagram.com/stocktutorofficial/'} isExternal><FaInstagram /></Link>
             </SocialButton>
           </Stack>
         </Container>
       </Box>
+
+      {/* <Box
+          borderTopWidth={1}
+          borderStyle={"solid"}
+          borderColor={useColorModeValue("gray.400", "gray.700")}
+        >
+          <Container
+            as={Stack}
+            maxW={"6xl"}
+            // py={4}
+            direction={{ base: "column", md: "row" }}
+            spacing={4}
+            justify={{ md: "space-between" }}
+            align={{ md: "center" }}
+          >
+            <Image src={biglogo} w="28" alt="Logo" />
+            <Text>
+              © StockTutor 2023 : All rights reserved
+            </Text>
+
+            <SocialButton label={'Twitter'} >
+            <Link href={'https://twitter.com/_Stocktutor'} isExternal><FaXTwitter /></Link>
+            </SocialButton>
+            
+            <SocialButton label={'YouTube'}>
+              <Link href={'https://www.youtube.com/@Stock_Tutor_Official'} isExternal><FaYoutube /></Link>
+            </SocialButton>
+
+            <SocialButton label={'Instagram'} >
+              <Link href={'https://www.instagram.com/stocktutorofficial/'} isExternal><FaInstagram /></Link>
+            </SocialButton>
+          </Container>
+        </Box> */}
     </Box>
   )
 }

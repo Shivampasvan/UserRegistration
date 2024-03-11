@@ -23,7 +23,7 @@ const Slider = () => {
 
   return (
     <>
-    <AppContainer>
+    <AppContainer style={{width:'70%', textAlign:'center', margin:'auto'}}>
       <Wrapper>
         <Text>With Great Outcomes</Text>
         <Note>Unlocking the secrets of the stock market with every insightful seminar, empowering investors to thrive in every market condition</Note>
