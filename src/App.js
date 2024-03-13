@@ -46,7 +46,7 @@ function App() {
         <OurCourses/>
         <WhatOffer/>
         <Testimonials/>
-        {/* <Slider/> */}
+        {/* <Slider/> */}  
         <Certificate/>
         <Faq/>
         {showBottomBar && (
