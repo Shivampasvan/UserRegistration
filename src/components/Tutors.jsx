@@ -54,22 +54,12 @@ export default function Tutors() {
             Explore Our Team
             of Expert Tutors
           </Center>
-          {/* <Center>
-            <Text color={"#080E83"} fontFamily="roboto" fontSize={20}>
-              Ready to Empower Your Learning Journey
-            </Text>
-          </Center> */}
-          
-          
           <Box 
-          
           margin={'auto'} 
           width={'57%'} 
-          
           textAlign={'center'}
           bgGradient='linear(to-r, #4361ee, #3a0ca3, #4361ee)'
           bgClip='text'
-          
           >
           <span style={{ fontFamily: "monospace", fontSize: "20px" }}> “ </span>
             Our tutors epitomize excellence, blending expertise with
@@ -85,11 +75,9 @@ export default function Tutors() {
 
         <SimpleGrid
           alignSelf={"center"}
-          // py={20}
           padding={28}
           gap={"48px"}
-          // direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
-          columns={{ base: 1, sm: 2, md: 2, lg: 4 }}
+          columns={{ base: 1, sm: 1, md: 2, lg: 4 }}
         >
           <Box
             role={"group"}
@@ -364,28 +352,3 @@ export default function Tutors() {
   );
 }
 
-// const hue = keyframes`
-//  from {
-//    -webkit-filter: hue-rotate(160deg);
-//  }
-//  to {
-//    -webkit-filter: hue-rotate(300deg);
-//  }
-// `;
-// const AnimatedGradientText = styled.h1`
-//   color: #f35626;
-//   background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   -webkit-animation: ${hue} 10s infinite linear;
-//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-//     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-//   font-feature-settings: "kern";
-//   font-size: 40px;
-//   font-weight: 700;
-//   line-height: 48px;
-//   overflow-wrap: break-word;
-//   text-align: center;
-//   text-rendering: optimizelegibility;
-//   -moz-osx-font-smoothing: grayscale;
-// `;

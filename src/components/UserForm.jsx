@@ -227,48 +227,6 @@ const UserForm = () => {
         </Box>
       </Box>
 
-      {/* <SimpleGrid
-        height={600}
-        bgGradient="linear( #10002b, #6c757d, #10002b)"
-        fontFamily={"roboto"}
-        spacing={10}
-      >
-        <Box
-          color={"white"}
-          width={"50%"}
-          textAlign={"center"}
-          margin={"auto"}
-          fontSize={36}
-          fontWeight={400}
-        >
-          <Text>Learn and Earn with</Text>
-          <Text>
-            <span style={{ color: "rgb(246,194,20)", fontWeight: 600 }}>
-              StockTutor
-            </span>{" "}
-            : Your One Solution
-          </Text>
-        </Box>
-
-        <Box
-          color={"white"}
-          width={"30%"}
-          textAlign={"center"}
-          margin={"auto"}
-          fontSize={20}
-          fontWeight={400}
-        >
-          <Text>
-            Bridging the Gap in Stock Market Education with a Vision for Career
-            Support
-          </Text>
-        </Box>
-
-        <Box margin={"auto"}>
-          <Button>Click Here !</Button>
-          
-        </Box>
-      </SimpleGrid> */}
     </>
   );
 };

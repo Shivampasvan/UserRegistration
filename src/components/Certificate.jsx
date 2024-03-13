@@ -5,16 +5,16 @@ import certificate from "../Data/certificate.PNG";
 const Certificate = () => {
   return (
     <>
-      <SimpleGrid columns={2} width={"84%"} margin={"auto"} gap={24} my={20} fontFamily={"roboto"}>
+      <SimpleGrid columns={{base:1, sm:1, md:1, lg:2}} width={"84%"} margin={"auto"} gap={24} py={36} fontFamily={"roboto"}>
         <Box>
           <Image src={certificate} />
         </Box>
-        <Stack gap={8}>      
+        <Stack gap={8} justifyContent={'center'} textAlign={{base:'center', sm:'center', md:'center'}}>      
           <Box>
-          <Heading fontSize={40} fontWeight={600} color={'rgb(17,57,200)'}>StockTutor</Heading>
+          <Heading fontSize={40} fontWeight={600} color={'#113988'}>StockTutor</Heading>
           </Box>
-          <Box width={"88%"}>
-            <Text fontFamily={'montserrat'} color={'RGB(72 73 76)'} fontSize={18}>
+          <Box>
+            <Text fontFamily={'roboto'} color={'RGB(72 73 76)'} fontSize={17}>
               We're thrilled to extend our heartfelt congratulations on
               completing StockTutor's Financial Mastery Workshop. Your
               dedication and active participation have truly made this workshop
