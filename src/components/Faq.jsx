@@ -15,20 +15,16 @@ export default function Faq() {
 
     <>
         <Box 
-        // border={'5px solid red'}
         paddingY={24} 
         padding={'80px 0px 80px 0px'}
-        // height={'60%'}
         fontFamily={'roboto'}
-        // bg={'Highlight'}
         >
         <Center paddingBottom={28}>
         <Heading 
-        // color={'#3a0ca3'}
-        bgGradient='linear(to-l, #4895ef, #3a0ca3)'
-        bgClip='text'
-        fontSize='4xl'
-        fontWeight='600'
+        color={'#171945'}
+        fontFamily={'roboto'} 
+        fontWeight={500} 
+        fontSize={36}
         >FAQs! Need help?</Heading>
         </Center>
         <Accordion defaultIndex={[0]} allowToggle paddingX={{base:12, sm:16, md:20, lg:36}}>

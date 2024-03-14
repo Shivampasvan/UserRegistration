@@ -21,7 +21,7 @@ const WhatOffer = () => {
     <>
       <Box bgImage={ImgSource} maxH={"100%"} paddingY={20}>
         <Center>
-          <Heading style={{ fontFamily: "roboto", color:'#0a2472' }}>What we offer</Heading>
+          <Heading style={{ fontFamily: "roboto", color:'#171945' }} fontWeight={500}>What we offer</Heading>
         </Center>
         <Center>
           <Text fontSize={20} color={"gray.600"} paddingX={20} textAlign={'center'}>
@@ -43,11 +43,11 @@ const WhatOffer = () => {
             height={250}
             gap={"20px"}
             alignItems={"center"}
-            color={'rgb(5,8,69)'}
+            color={'#171945'}
             _hover={{
               cursor: 'pointer',
               borderRadius: "20px",
-              bgColor: "rgb(5,8,69)",
+              bgColor: "#171945",
               opacity: 1,
               color: "white",
               transition: ".5s",
@@ -57,7 +57,7 @@ const WhatOffer = () => {
           >
 
             <LiveTvIcon style={{ fontSize: 50, alignItems: "center" }} />
-            <Heading fontFamily={"roboto"} fontSize={28}>
+            <Heading fontFamily={"roboto"} fontSize={28} fontWeight={500}>
               Live Masterclass
             </Heading>
             <Text align={"center"}>
@@ -74,12 +74,12 @@ const WhatOffer = () => {
             height={250}
             gap={"20px"}
             alignItems={"center"}
-            color={'rgb(5,8,69)'}
+            color={'#171945'}
             _hover={{
               cursor: 'pointer',
               borderRadius: "20px",
               // border: '2px solid red',
-              bgColor: "rgb(5,8,69)",
+              bgColor: "#171945",
               opacity: 1,
               color: "white",
               transition: ".5s",
@@ -87,7 +87,7 @@ const WhatOffer = () => {
             }}
           >
             <SchoolIcon style={{ fontSize: 50, alignItems: "center" }} />
-            <Heading fontFamily={"roboto"} fontSize={28}>
+            <Heading fontFamily={"roboto"} fontSize={28} fontWeight={500}>
               Virtual Trading
             </Heading>
             <Text align={"center"}>
@@ -104,12 +104,12 @@ const WhatOffer = () => {
             height={250}
             gap={"20px"}
             alignItems={"center"}
-            color={'rgb(5,8,69)'}
+            color={'#171945'}
             _hover={{
               cursor: 'pointer',
               borderRadius: "20px",
               // border: '2px solid red',
-              bgColor: "rgb(5,8,69)",
+              bgColor: "#171945",
               opacity: 1,
               color: "white",
               transition: ".5s",
@@ -117,7 +117,7 @@ const WhatOffer = () => {
             }}
           >
             <VideocamIcon style={{ fontSize: 50, alignItems: "center" }} />
-            <Heading fontFamily={"roboto"} fontSize={28}>
+            <Heading fontFamily={"roboto"} fontSize={28} fontWeight={500}>
               Recorded Course
             </Heading>
             <Text align={"center"}>
@@ -134,12 +134,12 @@ const WhatOffer = () => {
             height={250}
             gap={"20px"}
             alignItems={"center"}
-            color={'rgb(5,8,69)'}
+            color={'#171945'}
             _hover={{
               cursor: 'pointer',
               borderRadius: "20px",
               // border: '2px solid red',
-              bgColor: "rgb(5,8,69)",
+              bgColor: "#171945",
               opacity: 1,
               color: "white",
               transition: ".5s",
@@ -147,7 +147,7 @@ const WhatOffer = () => {
             }}
           >
             <PsychologyIcon style={{ fontSize: 50, alignItems: "center" }} />
-            <Heading fontFamily={"roboto"} fontSize={28}>
+            <Heading fontFamily={"roboto"} fontSize={28} fontWeight={500}>
               Practical Learning
             </Heading>
             <Text align={"center"}>
@@ -163,12 +163,12 @@ const WhatOffer = () => {
             height={250}
             gap={"20px"}
             alignItems={"center"}
-            color={'rgb(5,8,69)'}
+            color={'#171945'}
             _hover={{
               cursor: 'pointer',
               borderRadius: "20px",
               // border: '2px solid red',
-              bgColor: "rgb(5,8,69)",
+              bgColor: "#171945",
               opacity: 1,
               color: "white",
               transition: ".5s",
@@ -176,7 +176,7 @@ const WhatOffer = () => {
             }}
           >
             <SchoolIcon style={{ fontSize: 50, alignItems: "center" }} />
-            <Heading fontFamily={"roboto"} fontSize={28}>
+            <Heading fontFamily={"roboto"} fontSize={28} fontWeight={500}>
             Trading Strategies
             </Heading>
             <Text align={"center"}>
@@ -192,12 +192,12 @@ const WhatOffer = () => {
             height={250}
             gap={"20px"}
             alignItems={"center"}
-            color={'rgb(5,8,69)'}
+            color={'#171945'}
             _hover={{
               cursor: 'pointer',
               borderRadius: "20px",
               // border: '2px solid red',
-              bgColor: "rgb(5,8,69)",
+              bgColor: "#171945",
               opacity: 1,
               color: "white",
               transition: ".5s",
@@ -205,7 +205,7 @@ const WhatOffer = () => {
             }}
           >
             <SchoolIcon style={{ fontSize: 50, alignItems: "center" }} />
-            <Heading fontFamily={"roboto"} fontSize={28}>
+            <Heading fontFamily={"roboto"} fontSize={28} fontWeight={500}>
               Career Support
             </Heading>
             <Text align={"center"}>

@@ -12,10 +12,6 @@ import User4 from "../Data/user4.png";
 import User5 from "../Data/user5.png";
 import User2 from "../Data/user2.png";
 import StarHalfIcon from '@mui/icons-material/StarHalf';
-import styled from "styled-components";
-import { keyframes } from "styled-components";
-
-// import './Testimonials.css'
 
 interface Props {
   children: React.ReactNode;
@@ -32,6 +28,7 @@ const TestimonialContent = (props: Props) => {
 
   return (
     <Stack
+      fontFamily={'roboto'}
       bg={useColorModeValue("white", "gray.800")}
       boxShadow={"lg"}
       p={8}
@@ -66,7 +63,7 @@ const TestimonialAvatar = ({ src, name, title }) => {
     <Flex align={"center"} mt={8} direction={"column"} >
       <Avatar src={src} mb={2} />
       <Stack spacing={-1} align={"center"}>
-        <Text fontWeight={600} fontSize={"17px"} color={"rgb(13,44,66)"} transform={'scale(1.025, 1)'}>
+        <Text fontWeight={600} fontSize={"17px"} color={'#171945'} transform={'scale(1.025, 1)'}>
           {name}
         </Text>
         <Text
@@ -74,7 +71,7 @@ const TestimonialAvatar = ({ src, name, title }) => {
           fontFamily={"roboto"}
           fontWeight={400}
           fontSize={"13px"}
-          color={useColorModeValue("gray.800", "gray.800")}
+          color={'#171945'}
         >
           {title}
         </Text>
@@ -85,20 +82,11 @@ const TestimonialAvatar = ({ src, name, title }) => {
 
 export default function Testimonials() {
   return (
-    <Box bgGradient='linear(to-l, white, #5689ea)'>
+    <Box>
       <Container maxW={'6xl'} py={28} as={Stack} spacing={20}>
         <Stack spacing={0} align={"center"} padding={'12px 0px 50px 0px'}>
-          <Text 
-          // color={"RGB(225,232,239)"} 
-          color={"#2563EB"} 
-          fontWeight={600} 
-          bgGradient='linear(to-l, #0a2472, #0a2472, )'
-          bgClip='text'
-          >
-        
-            2000+ Happy Traders
-          </Text>
-          <Text color={'#0a2472'} fontSize={36} fontWeight={600} paddingX={{base:12}} textAlign={'center'} >
+          <Text color={'#171945'}>2000+ Happy Traders</Text>
+          <Text fontFamily={'roboto'} color={'#171945'} fontSize={36} fontWeight={500} paddingX={{base:12}} textAlign={'center'} >
             Don’t just take our words
           </Text>
         </Stack>
@@ -180,36 +168,3 @@ export default function Testimonials() {
   );
 }
 
-/*
-
-
-
-export default function TextGradientComponent() {
-  return (
-    <>
-      <AnimatedGradientText>Hi, I'm Alexander</AnimatedGradientText>
-    </>
-  );
-}
-
-const gradient = keyframes`
-{
-0% {
-  background-position: 0 50%;
-}
-50% {
-  background-position: 100% 50%;
-}
-100% {
-  background-position: 0 50%;
-}}
-`;
-const AnimatedGradientText = styled.h1`
-  animation: ${gradient} 5s ease-in-out infinite;
-  background: linear-gradient(to right, #ee9ca7, #ffdde1, #2193b0, #6dd5ed);
-  background-size: 300%;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-`;
-
-*/

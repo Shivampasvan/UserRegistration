@@ -5,13 +5,13 @@ import certificate from "../Data/certificate.PNG";
 const Certificate = () => {
   return (
     <>
-      <SimpleGrid columns={{base:1, sm:1, md:1, lg:2}} width={"84%"} margin={"auto"} gap={24} py={36} fontFamily={"roboto"}>
+      <SimpleGrid columns={{base:1, sm:1, md:1, lg:2}} width={"84%"} margin={"auto"} gap={24} py={36} >
         <Box>
           <Image src={certificate} />
         </Box>
         <Stack gap={8} justifyContent={'center'} textAlign={{base:'center', sm:'center', md:'center'}}>      
           <Box>
-          <Heading fontSize={40} fontWeight={600} color={'#113988'}>StockTutor</Heading>
+          <Heading fontFamily={"roboto"} fontSize={36} fontWeight={500} color={'#171945'}>StockTutor</Heading>
           </Box>
           <Box>
             <Text fontFamily={'roboto'} color={'RGB(72 73 76)'} fontSize={17}>
