@@ -104,7 +104,7 @@ export default function Testimonials() {
                 <GradeIcon style={{ color: "rgb(37,99,235)" }} />
                 <GradeIcon style={{ color: "rgb(37,99,235)" }} />
               </Flex>
-              <Text>
+              <Text color={'RGB(72 73 76)'}>
                 An excellent choice for informed investment decisions.
                 Exceptional technical analysis training, practical approach, and
                 valuable career support
@@ -127,7 +127,7 @@ export default function Testimonials() {
                 <GradeIcon style={{ color: "rgb(37,99,235)" }} />
                 <StarHalfIcon style={{ color: "rgb(37,99,235)" }} />
               </Flex>
-              <Text>
+              <Text color={'RGB(72 73 76)'}>
                 Comprehensive learning, practical approach, and outstanding
                 career support. Boosted my confidence for a rewarding financial
                 career.
@@ -150,7 +150,7 @@ export default function Testimonials() {
                 <GradeIcon style={{ color: "rgb(37,99,235)" }} />
                 <GradeIcon style={{ color: "rgb(37,99,235)" }} />
               </Flex>
-              <Text>
+              <Text color={'RGB(72 73 76)'}>
                 Life-changing stock market course with practical learning and
                 excellent career support. Highly recommended for aspiring
                 traders. Super happy.

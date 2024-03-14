@@ -83,48 +83,67 @@ const BottomBar = () => {
         // bg={"#171945"}
         position="fixed"
         bottom={0}
-        height={"150"}
-        margin={"auto"}
+        height={"auto"}
+        // margin={"auto"}
       >
-        <Box width={"80%"} margin={"auto"}>
+        <Box 
+        width={"80%"} 
+        margin={"auto"}
+        // border={'2px solid red'}
+        >
           <Flex>
             <Box
+            //   border={'2px solid red'}
               width={"25%"}
+              textAlign={'center'}
               alignItems={"center"}
               justifyContent={"center"}
-              display={{ base: "none", sm: "none", md: "none", lg: "block" }}
+              display={{ base: "block", sm: "block", md: "block", lg: "block" }}
             >
               <Image width={"80%"} src={AllTutors} />
             </Box>
-            <Box width={{ base: "100%" }}>
-              <Flex gap={{ base: 4, sm: 8, md: 16, lg: 24 }}>
-                <Stack justifyContent={"center"}>
+            <Box 
+            width={{ base: "100%" }}
+            // border={'2px solid yellow'}
+            >
+              <Flex justifyContent={'space-between'}>
+                <Stack
+                //  border={'2px solid green'}
+                >
+
+                  <Stack gap={2} width={'80%'} margin={'auto'}>
                   <Text
                     color={"rgb(255,200,69)"}
-                    fontSize={{ base: 12, sm: 16, md: 20, lg: 26 }}
+                    fontSize={{ base: 6, sm: 16, md: 20, lg: 26 }}
                     fontWeight={640}
                   >
                     Don’t miss out !{" "}
                   </Text>
                   <Text
-                    width={"70%"}
-                    fontSize={{ base: 10, sm: 10, md: 14, lg: 20 }}
+                    // width={"70%"}
+                    fontSize={{ base: 4, sm: 10, md: 14, lg: 20 }}
                     fontWeight={600}
                     color={"whitesmoke"}
                   >
                     You are one step away from achieving your financial freedom
                   </Text>
+                  </Stack>
                 </Stack>
-                <Box alignItems={"center"}>
+
+                <Box 
+                alignItems={"center"} 
+                // border={'2px solid pink'}
+                >
                   <Button
+                  width={{base:'50%', sm:'100%', md:'100%', lg:'100%'}}
                     size={{ base: "xs", sm: "sm", md: "md", lg: "lg" }}
                     borderRadius={20}
                     bg={"rgb(255,200,69)"}
                     color={"black"}
-                    fontSize={20}
+                    fontSize={{base:8, sm:12, md:16, lg:20}}
                     fontWeight={640}
-                    padding={7}
-                    margin={10}
+                    // padding={7}
+                    mt={'15%'}
                     onClick={onOpen}
                   >
                     Request a call back
@@ -178,9 +197,9 @@ const BottomBar = () => {
                             </InputGroup>
                           </FormControl>
 
-                          <Box width={"55%"} margin={"auto"} mt={4} mb={0}>
+                          <Box margin={"auto"} mt={4}>
                             <Button
-                              width={"100%"}
+                            //   width={"100%"}
                               bgColor={'#EBB913'}
                               onClick={handleClick}
                               color={"rgb(5,8,69)"}
