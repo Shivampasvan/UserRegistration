@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       // Setting the number of components to scroll past before showing the bottom bar
-      const componentsToScrollPast = 2; 
+      const componentsToScrollPast = 1; 
       const scrollPositionToTrigger = window.innerHeight * componentsToScrollPast;
 
       if (window.scrollY > scrollPositionToTrigger) {
