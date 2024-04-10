@@ -13,11 +13,12 @@ import {
   Text,
   useToast,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import sachin from "../Data/sachin.png";
 import ayushi from "../Data/ayushi.png";
 import udit from "../Data/udit.png";
 import axios from "axios";
+import { cashfree } from "../cashfree/util.js"
 import { PhoneIcon } from "@chakra-ui/icons";
 import squarelogo from '../Data/SquareLogo.png';
 
@@ -26,10 +27,11 @@ const Combine = () => {
   const [fname, setFname] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  let uri = "https://plum-gharial-yoke.cyclic.app/users/add";
+  const [sessionId, setSessionId] = useState("")
+  let uri = "http://localhost:3001/api/v1/payment"
 
   const handleClick = () => {
-    if (fname !== "" && email!== "" && phone !== "") {
+    if (fname !== "" && email !== "" && phone !== "") {
       const name = `${fname}`;
       const userData = {
         name,
@@ -40,6 +42,7 @@ const Combine = () => {
       axios
         .post(uri, userData)
         .then((res) => {
+          setSessionId(res.data.message);
           toast({
             title: "Data submitted successfully",
             status: "success",
@@ -49,7 +52,7 @@ const Combine = () => {
           setFname("");
           setEmail("");
           setPhone("");
-          console.log(userData);
+          // handlePayment()
         })
         .catch((err) => {
           toast({
@@ -72,6 +75,34 @@ const Combine = () => {
     }
   };
 
+  useEffect(() => {
+    // axios.get("http://localhost:3001/session/new")
+    //   .then((res) => setSessionId(res.data.sessionid))
+    //   .catch((err) => console.log(err.message))
+    if (sessionId !== "") {
+      handlePayment()
+    }
+
+  }, [sessionId])
+
+  const handlePayment = () => {
+    let checkoutOptions = {
+      paymentSessionId: sessionId,
+      returnUrl: "http://localhost:3000/api/v1/status/{orderid}",
+
+    }
+    cashfree.checkout(checkoutOptions).then(function (result) {
+      if (result.error) {
+        alert(result.error.message)
+      }
+      if (result.redirect) {
+        console.log(result);
+        console.log("Redirection")
+      }
+    });
+
+  }
+
   return (
     <>
       <Box bgGradient="linear(to-r, #131543, #525368, #131543)" pb={20}>
@@ -85,10 +116,10 @@ const Combine = () => {
             margin={"auto"}
             width={"80%"}
             gap={5}
-            textAlign={{base:'center', sm:'center', md:'center', lg:'start'}}
+            textAlign={{ base: 'center', sm: 'center', md: 'center', lg: 'start' }}
           >
             <Box>
-            <Image width={'40%'} margin={'auto'} src={squarelogo}/>
+              <Image width={'40%'} margin={'auto'} src={squarelogo} />
             </Box>
             <Text fontSize={48} fontWeight={600} width={"100%"}>
               Master Stock Trading with{" "}
@@ -106,13 +137,13 @@ const Combine = () => {
             gap={10}
             width={"65%"}
           >
-            <Box width={"80%"} margin={{base:'auto', sm:'auto', md:'auto', lg:'unset'}}>
+            <Box width={"80%"} margin={{ base: 'auto', sm: 'auto', md: 'auto', lg: 'unset' }}>
               <Text
                 color={"whitesmoke"}
                 fontStyle={"italic"}
                 fontFamily={"cursive"}
                 fontSize={24}
-                textAlign={{base:'center', sm:'center', md:'center', lg:'start'}}
+                textAlign={{ base: 'center', sm: 'center', md: 'center', lg: 'start' }}
               >
                 Register now to secure your Financial future !!
               </Text>
@@ -212,10 +243,10 @@ const Combine = () => {
                   <Text fontSize={13}>MBA Finance, NISM</Text>
                 </Box>
                 <Text fontWeight={500} fontSize={19}>
-                Technical Analysis
+                  Technical Analysis
                 </Text>
                 <Text fontSize={17}>
-                17+ years of experience and made thousands of students technically strong.
+                  17+ years of experience and made thousands of students technically strong.
                 </Text>
               </Stack>
             </Stack>
@@ -232,10 +263,10 @@ const Combine = () => {
                   <Text fontSize={13}>CA, Corporate Law Advisor</Text>
                 </Box>
                 <Text fontWeight={500} fontSize={19}>
-                Fundamental Analysis
+                  Fundamental Analysis
                 </Text>
                 <Text fontSize={17}>
-                15+ years of experience and explains P&L in the simplest way possible.
+                  15+ years of experience and explains P&L in the simplest way possible.
                 </Text>
               </Stack>
             </Stack>

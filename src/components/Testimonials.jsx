@@ -86,7 +86,7 @@ export default function Testimonials() {
       <Container maxW={'6xl'} py={28} as={Stack} spacing={20}>
         <Stack spacing={0} align={"center"} padding={'12px 0px 50px 0px'}>
           <Text color={'#171945'}>2000+ Happy Traders</Text>
-          <Text fontFamily={'roboto'} color={'#171945'} fontSize={36} fontWeight={500} paddingX={{base:12}} textAlign={'center'} >
+          <Text fontFamily={'roboto'} color={'#171945'} fontSize={36} fontWeight={500} paddingX={{ base: 12 }} textAlign={'center'} >
             Don’t just take our words
           </Text>
         </Stack>
@@ -111,7 +111,7 @@ export default function Testimonials() {
               </Text>
             </TestimonialContent>
             <TestimonialAvatar
-              
+
               src={User5}
               name={"Shreya Arora"}
               title={"1st Batch"}
@@ -134,7 +134,7 @@ export default function Testimonials() {
               </Text>
             </TestimonialContent>
             <TestimonialAvatar
-              
+
               src={User2}
               name={"Rahul Malik"}
               title={"2nd Batch"}
