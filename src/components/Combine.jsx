@@ -32,6 +32,31 @@ const Combine = () => {
 
   const handleClick = () => {
     if (fname !== "" && email !== "" && phone !== "") {
+
+      if (email!=="") {
+        const domain = email.split("@");
+        if (domain.length!==2) {
+          return toast({
+            title: "Pls Enter Valid Email id.",
+            description: `Please Fill Required Details`,
+            status: "error",
+            duration: 2000,
+            isClosable: true,
+          });
+        }
+      }
+
+      if (phone!=="") {
+        if (phone.length!==10) {
+          return toast({
+            title: "Pls Enter Valid Phone No.",
+            description: `Phone Number Should be of Length 10`,
+            status: "error",
+            duration: 2000,
+            isClosable: true,
+          });
+        }
+      }
       const name = `${fname}`;
       const userData = {
         name,
@@ -76,20 +101,15 @@ const Combine = () => {
   };
 
   useEffect(() => {
-    // axios.get("http://localhost:3001/session/new")
-    //   .then((res) => setSessionId(res.data.sessionid))
-    //   .catch((err) => console.log(err.message))
     if (sessionId !== "") {
       handlePayment()
     }
-
   }, [sessionId])
 
   const handlePayment = () => {
     let checkoutOptions = {
       paymentSessionId: sessionId,
-      returnUrl: "http://localhost:3000/api/v1/status/{orderid}",
-
+      returnUrl: `http://localhost:3001/api/v1/status/{order_id}`,
     }
     cashfree.checkout(checkoutOptions).then(function (result) {
       if (result.error) {

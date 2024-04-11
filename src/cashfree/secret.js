@@ -1,4 +1,4 @@
-module.exports = {
-    secreat_key: process.env.secreat_key,
-    app_id: process.env.app_id
+module.exports={
+    secreat_key:process.env.cashfree_app_id,
+    app_id:process.env.cashfree_secret_key
 }
